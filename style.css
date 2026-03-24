@@ -3,7 +3,7 @@
   padding: 0;
   font-family: "Trispace", sans-serif;
   box-sizing: border-box;
-  accent-color: rgb(206, 206, 54);
+  accent-color: rgb(168, 189, 144);
   text-decoration: none;
   scroll-behavior: smooth;
   list-style: none;
@@ -15,7 +15,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgb(206, 206, 54);
+  background-color: rgb(168, 189, 144);
   color: black;
   display: flex;
   justify-content: center;
@@ -69,7 +69,7 @@ header {
 }
 
 .logo:hover {
-  color: rgb(206, 206, 54);
+  color: rgb(168, 189, 144);
   transition: 0.2s ease-out;
 }
 
@@ -95,7 +95,7 @@ li a::before {
   border-radius: 2rem;
   transition: 0.2s ease-out;
 
-  background: rgb(206, 206, 54);
+  background: rgb(168, 189, 144);
 }
 li a:hover::before {
   width: 100%;
@@ -111,7 +111,7 @@ hamburger-nav {
 }
 
 #menu-icon:hover {
-  color: rgb(206, 206, 54);
+  color: rgb(168, 189, 144);
   transition: 0.2s ease-out;
   cursor: pointer;
 }
@@ -187,8 +187,8 @@ section {
 }
 
 .btn:hover {
-  background-color: rgb(206, 206, 54);
-  border: 1.2px solid rgb(206, 206, 54);
+  background-color: rgb(168, 189, 144);
+  border: 1.2px solid rgb(168, 189, 144);
   color: white;
 }
 
@@ -289,6 +289,7 @@ section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2rem;
+  padding: 2rem;
 }
 
 .project-card {
@@ -313,9 +314,9 @@ section {
 }
 
 .project-card:hover {
-  background: rgba(206, 206, 54, 0.719);
+  background: rgb(129, 138, 119);
   color: rgb(255, 255, 191);
-  box-shadow: 0 0.2rem 0.2rem 0 rgba(185, 185, 185, 0.521);
+  box-shadow: 0 0.2rem 0.8rem 0.1rem rgb(185, 185, 185);
   transform: translateY(-10px);
 }
 
@@ -340,24 +341,14 @@ img {
   margin: auto;
 }
 
-.projects-intro {
-  font-size: 1rem;
-  padding-left: 3rem;
-  padding-right: 3rem;
-  align-items: center;
-  text-align: baseline;
-}
-
-.projects-links ul {
+.projects-text {
   display: flex;
   flex-direction: column;
+  padding-left: 10rem;
+  padding-right: 10rem;
   align-items: center;
-  padding: 2rem;
-  gap: 1rem;
-}
-
-.projectl-links.project-links {
-  margin: 2rem;
+  justify-content: center;
+  line-height: 2rem;
 }
 
 .design-card,
