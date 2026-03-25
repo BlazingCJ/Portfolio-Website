@@ -386,11 +386,12 @@ contact {
   border: 1px solid black;
   border-radius: 3rem;
   overflow: hidden;
-  width: auto;
-  aspect-ratio: 16 / 9;
+  width: 900px;
+  height: fit-content;
 }
 
 spline-viewer {
+  display: block;
   width: 100%;
   height: 100%;
 }
