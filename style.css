@@ -351,6 +351,12 @@ img {
   line-height: 2rem;
 }
 
+.modeling {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .design-card,
 .booklets-card,
 .modeling-card {
