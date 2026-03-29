@@ -375,6 +375,18 @@ contact {
   align-content: center;
 }
 
+.design-card projectmoosic,
+span {
+  padding: 100px 
+}
+
+.design-card .projectimg-container {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+
 #contact-text {
   text-align: center;
   margin-bottom: 1rem;
