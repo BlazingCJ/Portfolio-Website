@@ -30,6 +30,17 @@
   pointer-events: none;
 }
 
+.loader {
+  display: block;
+  align-items: center;
+  justify-content: center;
+  line-height: 3rem;
+}
+
+.loader img {
+  scale: 0.7;
+}
+
 .feather {
   width: 24px;
   height: 24px;
@@ -209,33 +220,34 @@ section {
   margin-bottom: 3rem;
 }
 
-.experience-info {
+.experience-text {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100px;
-  margin: 5rem;
+  padding: 5rem;
 }
 
-.grid {
+.exp-grid {
   display: flex;
-  gap: 1rem;
-  margin-left: 3rem;
-  margin-right: 3rem;
+  align-items: flex-start;
+
+  justify-content: center;
 }
 
-.grid-card {
+.exp-grid-card {
   border: 2px solid rgb(0, 0, 0);
   border-radius: 2rem;
+  margin: 2rem;
   padding: 1.5rem;
-  width: 300px;
-  align-items: baseline;
+  width: 30%;
+  align-items: center;
   justify-content: center;
   cursor: grab;
   background: rgb(204, 204, 204);
 }
 
-.grid-card:hover {
+.exp-grid-card:hover {
   background: linear-gradient(
     to left,
     rgba(255, 255, 255, 0.295),
@@ -245,13 +257,14 @@ section {
   transition: 0.2s ease-in;
 }
 
-.grid-card i {
+.exp-grid-card i {
   font-size: 1rem;
   margin-right: 5px;
 }
 
-.grid-card span {
+.exp-grid-card span {
   font-size: 1.2rem;
+  margin-bottom: 0.3rem;
   font-weight: 400;
   background: rgb(99, 99, 99);
   background-clip: text;
@@ -259,13 +272,13 @@ section {
   line-height: 0.3rem;
 }
 
-.grid-card h3 {
+.exp-grid-card h3 {
   font-size: 0.8rem;
   font-weight: 300;
   line-height: 2rem;
 }
 
-.grid-card p {
+.exp-grid-card p {
   font-size: 0.8rem;
   font-weight: 200;
   line-height: 1.2rem;
@@ -280,15 +293,15 @@ section {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgb(255, 255, 191);
+  background: rgb(126, 126, 126);
 }
 
 .project-grid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  width: auto;
   gap: 2rem;
-  padding: 2rem;
 }
 
 .project-card {
@@ -300,15 +313,28 @@ section {
   align-items: center;
   justify-content: center;
   text-align: center;
-  gap: 1rem;
+  gap: 0.2rem;
   border-radius: 3rem;
   cursor: crosshair;
-  width: 25%;
   transition: 0.05s ease-in-out;
 }
 
+.projects {
+  display: block;
+}
+
+.projects-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 2rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
 .project-card img {
-  width: 15vw;
+  width: 20vw;
   display: block;
   border-radius: 3rem;
 }
@@ -339,16 +365,6 @@ img {
   display: flex;
   justify-content: center;
   margin: auto;
-}
-
-.projects-text {
-  display: flex;
-  flex-direction: column;
-  padding-left: 10rem;
-  padding-right: 10rem;
-  align-items: center;
-  justify-content: center;
-  line-height: 2rem;
 }
 
 .modeling {
@@ -452,10 +468,7 @@ footer ul li a {
   gap: 3rem;
 }
 
-.experience-info {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.experience-text {
   padding: 5rem;
 }
 
@@ -504,6 +517,15 @@ footer ul li a {
     border-radius: 3rem;
     display: none;
   }
+
+  .project-grid {
+    flex-wrap: wrap;
+  }
+
+  .experience-text grid {
+    flex-wrap: wrap;
+  }
+
   .nav-links li {
     margin-top: 1.5rem;
     padding: 0.03rem;
