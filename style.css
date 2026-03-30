@@ -208,16 +208,17 @@ section {
   font-weight: 300;
   margin-bottom: 3rem;
 }
+
 .experience-info {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 3rem;
+  height: 100px;
+  margin: 5rem;
 }
 
 .grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
   gap: 1rem;
   margin-left: 3rem;
   margin-right: 3rem;
@@ -229,7 +230,7 @@ section {
   padding: 1.5rem;
   width: 300px;
   align-items: baseline;
-  justify-content: right;
+  justify-content: center;
   cursor: grab;
   background: rgb(204, 204, 204);
 }
@@ -246,7 +247,7 @@ section {
 
 .grid-card i {
   font-size: 1rem;
-  margin-bottom: 1rem;
+  margin-right: 5px;
 }
 
 .grid-card span {
@@ -255,15 +256,12 @@ section {
   background: rgb(99, 99, 99);
   background-clip: text;
   color: transparent;
-  line-height: 1rem;
-
-  margin-bottom: 0.5rem;
+  line-height: 0.3rem;
 }
 
 .grid-card h3 {
   font-size: 0.8rem;
   font-weight: 300;
-  margin-bottom: 0.5rem;
   line-height: 2rem;
 }
 
@@ -375,9 +373,8 @@ contact {
   align-content: center;
 }
 
-.design-card projectmoosic,
-span {
-  padding: 100px 
+.design-card projectmoosic {
+  padding: 100px;
 }
 
 .design-card .projectimg-container {
@@ -385,7 +382,6 @@ span {
   flex-direction: column;
   box-sizing: border-box;
 }
-
 
 #contact-text {
   text-align: center;
@@ -474,9 +470,6 @@ footer ul li a {
     flex-direction: column;
   }
 
-  .grid {
-    grid-template-columns: repeat(1, 1fr);
-  }
   .experience-info img {
     width: 70vw;
   }
