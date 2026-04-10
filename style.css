@@ -41,6 +41,19 @@
   scale: 0.7;
 }
 
+.Vid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landingVid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 .feather {
   width: 24px;
   height: 24px;
